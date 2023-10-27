@@ -8,7 +8,7 @@ export const workstationApi = {
     return {
       id,
       deskNumber: 15,
-      isReserved: false,
+      isReserved: Math.random() < 0.5,
     };
   },
   getTimeTableById: async (id) => {
@@ -37,6 +37,17 @@ export const workstationApi = {
         },
         {
           date: "2023-10-28",
+          from: {
+            hours: 5,
+            minutes: 30,
+          },
+          to: {
+            hours: 10,
+            minutes: 0,
+          },
+        },
+        {
+          date: "2023-11-01",
           from: {
             hours: 5,
             minutes: 30,
