@@ -1,0 +1,82 @@
+.timeTable {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.timeTable thead {
+  position: sticky;
+  top: 0px;
+  background-color: white;
+}
+
+.timeTable th,
+.timeTable td {
+  text-align: center;
+}
+
+.timeTable th {
+  font-size: 10px;
+  color: var(--color-black);
+}
+
+.timeTable th.today {
+  color: rgb(161, 75, 29);
+}
+
+.timeTable td {
+  line-height: 1.5;
+}
+
+.timeTable td.hours {
+  font-weight: 500;
+  color: var(--color-black);
+  font-size: 11px;
+  width: 50px;
+}
+
+.timeTable td:not(.hours) {
+  border: 1px solid var(--color-light-gray);
+  width: 30px;
+  min-width: 30px;
+}
+
+.timeTable td.notAvailable {
+  background-color: var(--color-unavailable);
+}
+
+.timeTable td.disabled {
+  border: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.navs {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.legend {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.notAvailableBox {
+  width: 30px;
+  height: 15px;
+  background-color: var(--color-unavailable);
+}
