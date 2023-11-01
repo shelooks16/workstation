@@ -36,7 +36,7 @@ export const workstationApi = {
           },
         },
         {
-          date: "2023-10-28",
+          date: DateManager.d().add(1, "day").format("YYYY-MM-DD"),
           from: {
             hours: 5,
             minutes: 30,
@@ -47,18 +47,18 @@ export const workstationApi = {
           },
         },
         {
-          date: "2023-11-01",
+          date: DateManager.d().add(3, "day").format("YYYY-MM-DD"),
           from: {
-            hours: 5,
+            hours: 8,
             minutes: 30,
           },
           to: {
-            hours: 10,
+            hours: 16,
             minutes: 0,
           },
         },
         {
-          date: "2023-10-25",
+          date: DateManager.d().add(3, "day").format("YYYY-MM-DD"),
           from: {
             hours: 1,
             minutes: 30,
